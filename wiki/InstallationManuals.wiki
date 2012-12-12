@@ -1,0 +1,5 @@
+= Installation Manuals =
+
+* [Setting up BioMAJ]
+* [Installing the CollectionManager]
+* [Using DataLink.sh]

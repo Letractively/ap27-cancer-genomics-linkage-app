@@ -1,5 +1,5 @@
 = Installation Manuals =
 
-* [Setting up BioMAJ]
-* [Installing the CollectionManager]
-* [Using DataLink.sh]
+  * [SetUpBioMAJ Setup BioMaj]
+  * [InstallCollectionManager Installing the Collection Manager]
+  * [DataLink Linking Data with Galaxy]

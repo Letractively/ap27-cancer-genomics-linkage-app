@@ -1,0 +1,66 @@
+#labels Phase-Deploy,Featured
+#User documentation for the !DataLink tool
+
+= !DataLink =
+
+*Version 1.4* Released: 2013-01-04
+
+== Introduction ==
+This tool will upload the specified data files as a Galaxy Data Library
+resource. The files are linked to the specified data path (not copied). If the specified path consists of a directory of files, this directory structure will be automatically mirrored in Galaxy.
+
+This tool was developed in for the (AP27) Cancer Genomics Linkage Application funded by Australian National Data Service (ANDS).
+
+=== Unsupported Features in v1.4 ===
+Version 1.4 does not yet support updating newer versions of the same file. If you use this script to update a file with the same name, it will instead create another file with the same name in the Galaxy Library. In order to upload a newer version of the same datafile, use the Galaxy Admin interface, then go to Data > Manage data Libraries.
+
+We will add in the update functionality in the next release.
+
+== Dependency ==
+ * Tested with [http://www.python.org/ Python 2.7.3]
+
+== Installation ==
+ * Download the zip file [http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/detail?name=Galaxy_DataLink_1.4.zip&can=2&q= Galaxy_DataLink_1.4.zip]
+ * Unzip in directory
+ * Use the python script directory
+
+== Usage ==
+{{{
+$python datalink.py --help
+usage: datalink.py [-h] -u URL -l LIBID -k KEY -p DATAPATH
+
+This script will upload the specified data files as a Galaxy Data Library
+resource. The files are linked to the specified data path (not copied). If the
+specified path consists of a directory of files, this directory structure will
+be automatically mirrored in Galaxy.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u URL, --url URL     Galaxy URL e.g. http://localhost:8080
+  -l LIBID, --library LIBID
+                        Name of the Galaxy library you want to create or update
+  -k KEY, --key KEY     Your Galaxy API key
+  -p DATAPATH, --path DATAPATH
+                        Full path to the dataset that will be linked
+}}}
+
+== Example usage ==
+Given the following directory structure
+{{{
+/testdata
+  |
+  |-----alu_test
+         |
+         |-----alu.a
+         |-----alu.n
+  |-----drosoph
+         |
+         |-----drosoph.aa
+         |-----drosoph.nt
+
+$python datalink.py -u <URL> -l testdata -k <GALAXY_API key> -p /testdata
+Searching library id for:  testdatalink
+Creating library:  testdatalink
+ID for library ( testdatalink ):  03501d7626bd192f
+Elapsed time:  00:00:06
+}}}

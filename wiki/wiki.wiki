@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
 #labels Featured
-
 = Cancer Genomics Linkage App =
 
 This project is composed of a number of components:

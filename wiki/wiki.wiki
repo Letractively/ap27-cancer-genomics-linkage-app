@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+#labels Featured
+
+= Cancer Genomics Linkage App =
+
+This project is composed of a number of components:
+
+ * *Data Synchronisation*
+Reference datasets from public repositories can be mirrored locally using the download scheduler [http://biomaj.genouest.org/ BioMAJ]. See [http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/detail?name=Data_Synchronisation_Setup.pdf&can=2&q= Data_Synchronisation_Setup.pdf] for more information about setting up BioMAJ. To link the data downloaded from BioMAJ with Galaxy see GalaxyDataLinkTool.
+
+ * *DataLink Tool*
+Linking downloaded reference data with Galaxy
+
+ * *Collection Manager*
+This is a web-interface that allows users to manage the data and workflow records that are published to the RDA website.

@@ -9,7 +9,7 @@
   # Install a Servlet Controller (recommended to be Apache Tomcat 7.0.32)
   # Checkout the !DataGalaxyServlet project from !GoogleCode:
     {{{
-    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataGalaxyServlet
+    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataGalaxyServlet/[release]
     }}}
   # Create the WAR file for !DataGalaxyServlet 
   # Deploy the WAR file to the Servlet Controller <br /><p>If you have not set up the MySQL database required for the CollectionManager: </p>

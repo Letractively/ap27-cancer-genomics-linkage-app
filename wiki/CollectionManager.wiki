@@ -7,6 +7,21 @@
 *Version beta1.0* Released: 2013-01-07
 == Setting up CollectionManager ==
   # Install a Servlet Controller (recommended to be Apache Tomcat 7.0.32)
+  # Add mysql-connector-java-5.1.15.jar to <tomcat dir>/lib/
+  # Go to <tomcat dir>/conf/ and edit file server.xml
+    * Comment the line 
+    {{{
+<!-- <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/> -->
+    }}}
+    * Add instead
+    {{{
+<Realm allRolesMode="authOnly" className="org.apache.catalina.realm.JDBCRealm"
+                connectionName="yourMySQLUser" connectionPassword="yourMySQLPassword"
+                connectionURL="jdbc:mysql://pathToYourMySQLDB/db_name"
+                driverName="com.mysql.jdbc.Driver" userCredCol="password"
+                digest="sha" userNameCol="email" userTable="person"/>
+      </Realm>
+     }}} 
   # Create a MySQL database using the schema provided:
     http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
   # Checkout the !DataSourceManager project from !GoogleCode:

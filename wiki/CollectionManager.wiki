@@ -17,7 +17,7 @@
     {{{
 <Realm allRolesMode="authOnly" className="org.apache.catalina.realm.JDBCRealm"
                 connectionName="yourMySQLUser" connectionPassword="yourMySQLPassword"
-                connectionURL="jdbc:mysql://pathToYourMySQLDB/db_name"
+                connectionURL="jdbc:mysql://pathToYourMySQLDatabase/dbName"
                 driverName="com.mysql.jdbc.Driver" userCredCol="password"
                 digest="sha" userNameCol="email" userTable="person"/>
      }}} 

@@ -9,12 +9,10 @@
   # Go to: <tomcat dir>/webapps/DataGalaxyServlet/WEB-INF/classes/ and edit the 2 files:
     * hibernate.cfg.xml
     * mail.properties
-
-2.	Edit file: hibernate.cfg.xml
-a.	Edit the URL to your MySQL database
-b.	Edit the MySQL-User
-c.	Edit the MySQL-Password 
-As an example:
+  # Edit file: hibernate.cfg.xml
+    * Edit the URL to your MySQL database
+    * Edit the MySQL-User
+    * Edit the MySQL-Password <p>As an example:
 {{{
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
@@ -36,14 +34,13 @@ As an example:
 </session-factory>
 </hibernate-configuration>
 }}}
- 
-
-3.	Edit file: mail.properties
-a.	mail.store.protocol=
-b.	mail.transport.protocol=smtp
-c.	mail.smtp.host=smtp.example.org
-d.	mail.smtp.user=
-e.	mail.debug=
-f.	mail.from=example@example.org
-g.	mail.host=
+</p>
+  # Edit file: mail.properties
+    * mail.store.protocol=
+    * mail.transport.protocol=smtp
+    * mail.smtp.host=smtp.example.org
+    * mail.smtp.user=
+    * mail.debug=
+    * mail.from=example@example.org
+    * mail.host=
 As an example:

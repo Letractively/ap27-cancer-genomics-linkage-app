@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://path.to.database</property>
+  <property name="hibernate.connection.username">[username]</property>
+  <property name="hibernate.connection.password">[password]</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="show_sql">false</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <!-- Enable Hibernate's current session context -->
+  <property name="current_session_context_class">org.hibernate.context.internal.ManagedSessionContext</property>
+  <property name="hibernate.cache.use_second_level_cache">false</property>
+  <property name="hibernate.cache.use_query_cache">false</property>
+  
+          <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>        
+        <!-- Echo all executed SQL to stdout -->
+        
+        <!-- configuration pool via c3p0--> 
+<property name="c3p0.acquire_increment">1</property> 
+<property name="c3p0.idle_test_period">100</property> <!-- seconds --> 
+<property name="c3p0.max_size">100</property> 
+<property name="c3p0.max_statements">0</property> 
+<property name="c3p0.min_size">10</property> 
+<property name="c3p0.timeout">100</property> <!-- seconds --> 
+<!-- DEPRECATED very expensive property name="c3p0.validate>--> 
+  
+  <mapping class="org.qfab.domains.DataSource"/>
+  <mapping class="org.qfab.domains.DataLocation"/>
+  <mapping class="org.qfab.domains.Person"/>
+  <mapping class="org.qfab.domains.Site"/>
+  <mapping class="org.qfab.domains.Institution"/>
+  <mapping class="org.qfab.domains.SubjectCode"/>
+  
+</session-factory>
+</hibernate-configuration>

@@ -1,13 +1,17 @@
-#summary One-sentence summary of this page.
+#User documentation for the !CollectionManager
 
-= Introduction =
+<wiki:toc/>
 
-Add your content here.
+= !CollectionManager =
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Version beta1.0* Released: 2013-01-07
+== Setting up CollectionManager ==
+  # Install a Servlet Controller (recommended to be Apache Tomcat 7.0.32)
+  # Checkout the !DataSourceManager project from !GoogleCode:
+    {{{
+    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager
+    }}}
+  # Checkout the !webinterface project from !GoogleCode:
+    {{{
+    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ webinterface
+    }}} 

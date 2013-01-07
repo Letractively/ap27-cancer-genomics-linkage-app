@@ -1,35 +1,20 @@
 == Setting up DataGalaxyServlet ==
- # Install a Servlet Controller (recommended to be Apache Tomcat 7.0.32)
- # Download the DataGalaxyServlet.war from GoogleCode:
-http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
- # Deploy the DataGalaxyServlet.war to the Servlet Controller
+  # Install a Servlet Controller (recommended to be Apache Tomcat 7.0.32)
+  # Download the DataGalaxyServlet.war from GoogleCode:
+    http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
+  # Deploy the DataGalaxyServlet.war to the Servlet Controller <br /><p>If you have not set up the MySQL database required for the CollectionManager:</p>
+  # Create a MySQL database using the schema provided:
+    http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
+== Configuring DataGalaxyServlet ==
+  # Go to: <tomcat dir>/webapps/DataGalaxyServlet/WEB-INF/classes/ and edit the 2 files:
+    * hibernate.cfg.xml
+    * mail.properties
 
-If you have not set up the MySQL database required for the CollectionManager:
-
- # Create a MySQL database using the schema provided:
-http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
-Configuring DataGalaxyServlet 
-
- # Go to: <tomcat dir>/webapps/DataGalaxyServlet/WEB-INF/classes/ and edit the 2 files:
-a.	hibernate.cfg.xml
-b.	mail.properties
 2.	Edit file: hibernate.cfg.xml
 a.	Edit the URL to your MySQL database
 b.	Edit the MySQL-User
 c.	Edit the MySQL-Password 
 As an example:
- 
-
-3.	Edit file: mail.properties
-a.	mail.store.protocol=
-b.	mail.transport.protocol=smtp
-c.	mail.smtp.host=smtp.example.org
-d.	mail.smtp.user=
-e.	mail.debug=
-f.	mail.from=example@example.org
-g.	mail.host=
-As an example:
-
 {{{
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
@@ -51,3 +36,14 @@ As an example:
 </session-factory>
 </hibernate-configuration>
 }}}
+ 
+
+3.	Edit file: mail.properties
+a.	mail.store.protocol=
+b.	mail.transport.protocol=smtp
+c.	mail.smtp.host=smtp.example.org
+d.	mail.smtp.user=
+e.	mail.debug=
+f.	mail.from=example@example.org
+g.	mail.host=
+As an example:

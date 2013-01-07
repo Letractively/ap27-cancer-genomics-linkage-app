@@ -90,7 +90,7 @@ rifcs.dir.test=path/where/rifcs/will/be/generated/test
     }}} 
     </p>
   # Edit file mail.properties:
-    * mail.host=DataSource Manager
+    * mail.host=!DataSource Manager
     * mail.from=no-reply@datasource.org
     * mail.from.internet.name=Collection Manager
     * mail.store.protocol=

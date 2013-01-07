@@ -1,4 +1,4 @@
-:q#User documentation for the !CollectionManager
+#User documentation for the !CollectionManager
 
 <wiki:toc/>
 

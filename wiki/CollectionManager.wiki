@@ -13,5 +13,5 @@
     }}}
   # Checkout the !webinterface project from !GoogleCode:
     {{{
-    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ webinterface
+    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ CollectionInterface
     }}} 

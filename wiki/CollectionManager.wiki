@@ -1,4 +1,4 @@
-#User documentation for the !CollectionManager
+:q#User documentation for the !CollectionManager
 
 <wiki:toc/>
 
@@ -89,3 +89,13 @@ originating.source=http://server.name:8080/oaiPMHservlet/admin/data-provider.do
 rifcs.dir.test=path/where/rifcs/will/be/generated/test
     }}} 
     </p>
+  # Edit file mail.properties:
+    * mail.host=DataSource Manager
+    * mail.from=no-reply@datasource.org
+    * mail.from.internet.name=Collection Manager
+    * mail.store.protocol=
+    * mail.transport.protocol=
+    * mail.smtp.host=
+    * mail.smtp.user=
+    * mail.debug=
+    * to.email=[youremail]

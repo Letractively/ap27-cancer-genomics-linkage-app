@@ -7,11 +7,49 @@
 *Version beta1.0* Released: 2013-01-07
 == Setting up CollectionManager ==
   # Install a Servlet Controller (recommended to be Apache Tomcat 7.0.32)
+  # Create a MySQL database using the schema provided:
+    http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
   # Checkout the !DataSourceManager project from !GoogleCode:
     {{{
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager
     }}}
+  # Create the JAR file for DataSourceManager
   # Checkout the CollectionInterface project from !GoogleCode:
     {{{
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ CollectionInterface
     }}} 
+  # Add !DataSourceManager.jar as library to the CollectionInterface
+  # Create the WAR file for CollectionInterface
+  # Deploy the WAR file to the Servlet Controller
+== Configuring CollectionManager == 
+# Go to: <tomcat dir>/webapps/!CollectionInterface/WEB-INF/classes/ and edit the 3 files:
+    * hibernate.cfg.xml
+    * config.properties
+    * mail.properties
+  # Edit file: hibernate.cfg.xml
+    * Edit the URL to your MySQL database
+    * Edit the MySQL-User
+    * Edit the MySQL-Password <p>As an example:
+    {{{
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://yourPathToMySQLDatabase</property>
+  <property name="hibernate.connection.username">yourMySQLUser</property>
+  <property name="hibernate.connection.password">yourMySQLPassword</property>
+  <property name="hibernate.connection.pool_size">10</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="show_sql">false</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <mapping class="org.qfab.domain.DataCollection"/>
+  <mapping class="org.qfab.domain.DataLocation"/>
+  <mapping class="org.qfab.domain.DataAdmin"/>
+</session-factory>
+</hibernate-configuration>
+    }}}
+    </p>
+  # Edit file: mail.properties 

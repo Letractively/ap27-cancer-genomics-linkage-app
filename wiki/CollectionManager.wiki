@@ -20,7 +20,6 @@
                 connectionURL="jdbc:mysql://pathToYourMySQLDB/db_name"
                 driverName="com.mysql.jdbc.Driver" userCredCol="password"
                 digest="sha" userNameCol="email" userTable="person"/>
-      </Realm>
      }}} 
   # Create a MySQL database using the schema provided:
     http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/

@@ -14,7 +14,7 @@
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager/[release]
     }}}
   # Create the JAR file for !DataSourceManager
-  # Checkout the CollectionInterface project from !GoogleCode:
+  # Checkout the !CollectionInterface project from !GoogleCode:
     {{{
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ CollectionInterface/[release]
     }}} 
@@ -98,4 +98,4 @@ rifcs.dir.test=path/where/rifcs/will/be/generated/test
     * mail.smtp.host=
     * mail.smtp.user=
     * mail.debug=
-    * to.email=[youremail]
+    * to.email=yourEmailAddress

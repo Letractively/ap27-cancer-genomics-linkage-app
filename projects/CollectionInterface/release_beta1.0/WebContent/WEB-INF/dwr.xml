@@ -1,0 +1,63 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+    
+    
+<dwr>
+	
+  <allow>
+   <convert converter="bean" match="org.qfab.domains.DataLocation"/>
+   <convert converter="bean" match="org.qfab.domains.DataSource"/>
+   <convert converter="bean" match="org.qfab.domains.SubjectCode"/>
+   <convert converter="bean" match="org.qfab.domains.Institution"/>
+   <convert converter="bean" match="org.qfab.domains.Person"/>
+   <convert converter="bean" match="org.qfab.domains.Site"/>
+   <convert converter="bean" match="org.qfab.managers.*"/>
+   <convert converter="bean" match="org.qfab.utils.*"/>
+    <create creator="new" javascript="JDate">
+      <param name="class" value="java.util.Date"/>
+    </create>
+    <create creator="new" javascript="DBUtils">
+      <param name="class" value="org.qfab.utils.DBUtils"/>
+    </create>
+    <create creator="new" javascript="DataLocation">
+      <param name="class" value="org.qfab.domains.DataLocation"/>
+    </create>
+    <create creator="new" javascript="DataSource">
+      <param name="class" value="org.qfab.domains.DataSource"/>
+    </create>
+	<create creator="new" javascript="SubjectCode">
+      <param name="class" value="org.qfab.domains.SubjectCode"/>
+    </create>
+	<create creator="new" javascript="Institution">
+      <param name="class" value="org.qfab.domains.Institution"/>
+    </create>
+     <create creator="new" javascript="Person">
+      <param name="class" value="org.qfab.domains.Person"/>
+    </create>
+     <create creator="new" javascript="Site">
+      <param name="class" value="org.qfab.domains.Site"/>
+    </create>
+    <create creator="new" javascript="PersonManager">
+      <param name="class" value="org.qfab.managers.PersonManager"/>
+    </create>
+    <create creator="new" javascript="InstitutionManager">
+      <param name="class" value="org.qfab.managers.InstitutionManager"/>
+    </create>
+   	<create creator="new" javascript="DataLocationManager">
+   	  <param name="class" value="org.qfab.managers.DataLocationManager"/>
+   	</create>
+   	<create creator="new" javascript="SiteManager">
+   	  <param name="class" value="org.qfab.managers.SiteManager"/>
+   	</create>
+   	   	<create creator="new" javascript="DataSourceManager">
+   	  <param name="class" value="org.qfab.managers.DataSourceManager"/>
+   	</create>
+   	   	<create creator="new" javascript="RifcsIO">
+   	  <param name="class" value="org.qfab.utils.RifcsIO"/>
+   	</create>
+   	<create creator="new" javascript="EmailManager">
+   	  <param name="class" value="org.qfab.utils.EmailManager"/>
+   	</create>
+  </allow>
+</dwr>

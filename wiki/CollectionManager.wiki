@@ -22,7 +22,7 @@
   # Create the WAR file for CollectionInterface
   # Deploy the WAR file to the Servlet Controller
 == Configuring CollectionManager == 
-# Go to: <tomcat dir>/webapps/!CollectionInterface/WEB-INF/classes/ and edit the 3 files:
+  # Go to: <tomcat dir>/webapps/!CollectionInterface/WEB-INF/classes/ and edit the 3 files:
     * hibernate.cfg.xml
     * config.properties
     * mail.properties

@@ -1,0 +1,211 @@
+div.boldhighlight {
+	font-weight: bold;
+}
+div.exportlinks {
+    margin: -5px 0 10px 10px;
+    padding: 2px 4px 2px 0;
+    width: 100%;
+}
+
+div.exportlinks a {
+    text-decoration: none;
+}
+
+div.exportlinks span {
+    background-repeat: no-repeat;
+}
+
+span #user {
+	font-weight: bold; 
+/*	color:#0000FF;*/
+	color: red;
+	font-size: small;
+}
+
+span.csv {
+    background-image: url(../images/ico_file_csv.png);
+}
+
+span.excel {
+    background-image: url(../images/ico_file_excel.png);
+}
+
+span.pdf {
+    background-image: url(../images/ico_file_pdf.png);
+}
+
+span.xml {
+    background-image: url(../images/ico_file_xml.png);
+}
+
+span.export {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 4px 1px 20px;
+}
+
+span.pagebanner {
+	 background-color: #eee;
+    border-left: 1px dotted #999;
+    border-right: 1px dotted #999;
+    border-top: 1px dotted #999;
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 2px;
+    width: 99%;
+}
+
+span.pagelinks {
+    background-color: #eee;
+	 border-left: 1px dotted #999;
+    border-right: 1px dotted #999;
+    border-bottom: 1px dotted #999;    
+	 display: block;
+    font-size: .95em;
+    margin-bottom: 5px;
+    margin-top: -18px;
+    padding: 2px;
+    text-align: right;
+    width: 99%;
+}
+
+th.sorted a, th.sortable a {
+    background-position: right;
+    display: block;
+}
+
+.table th.order1 a, .tableSelect th.order1 a {
+    background-image: url(../images/arrow_down.png) !important;
+}
+
+.table th.order2 a , .tableSelect th.order2 a{
+    background-image: url(../images/arrow_up.png) !important;
+}
+
+div#main .tableHeaderImage { /* Tapestry */
+    position: absolute;
+    margin: 2px 0 0 -5px;
+    background: transparent;
+    border: 0;
+}
+
+.table th.sortable a {
+    background-image: url(../images/arrow_off.png);
+}
+
+.table th.sorted, .tableSelect th.sorted{
+    background-color: #4A6E94;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.table  th.sorted a, .table th.sortable a, .tableSelect  th.sorted a, .tableSelect th.sortable a  {
+    background-position: right;
+    background-repeat: no-repeat;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color:#fff;
+}
+
+.table tr.even, .tableSelect tr.even {
+    background: #eee;
+    border-top: 1px solid #c0c0c0;
+    color: #000000;
+}
+
+.table tr.odd, .tableSelect tr.odd  {
+    background: #fff;
+    border-top: 1px solid #c0c0c0;
+    color: #000000;
+}
+
+/* highlight .table row onmouseover */
+.table tr.over, .tableSelect tr.over  {
+    border-bottom: 1px solid #C0C0C0;
+    border-top: 1px solid #C0C0C0;
+    color: #000000;
+    cursor: pointer;
+}
+
+.detail th {
+   text-align: right;
+}
+
+/* Table look */
+	.table, .tableSelection {
+		border-collapse: collapse;
+		border: 2px solid #B3C2D2;
+		color: #000;
+		background: #fff;
+		vertical-align: bottom;
+		width: 100%;
+	}
+	.table caption, .tableSelect caption {
+		padding: 0 0.6em 0.8em;
+		font-size: 1.3em;
+		font-weight: bold;
+		text-align: left;
+		color: #000;
+		background: transparent;
+	}
+	/* For Tapestry's contribTable */
+	.table th table, .table th table td, .tableSelect th table, .tableSelect th table td {
+		width: 100%;
+		border: 0px;
+		vertical-align: bottom;
+	}
+	.contribTable th {
+		padding: 0px !important;
+		background: #d7e9f5;
+	}
+	.contribTable th .tableHeaderTable {
+		margin: 0px !important;
+	}
+	.table td, .table th, .tableHeaderTable td, .tableSelect td, .tableSelect th {
+		border: 1px solid #e0e0e0;
+		padding: 0.5em;
+	}
+	.table thead th, .tableHeaderTable td, .tableSelect thead th {
+		border: 1px solid #e0e0e0;
+		text-align: left;
+		font-size: 1em;
+		font-weight: bold;
+		background: #809AB4;
+		color: #fff;
+	}
+	.tableHeaderTable td a {
+		text-decoration: none !important;
+	}
+	.table tfoot th, .tableSelect tfoot th, tfoot td {
+		border: 1px solid #e0e0e0;
+		text-align: left;
+		font-size: 1em;
+		background: #e8e8cf;
+	}
+	.table tfoot th, .tableSelect tfoot th {
+		font-weight: bold;
+	}
+	.table tbody td a, .tableSelect tbody td a {
+		background: transparent;
+		text-decoration: underline;
+	}
+	.table tbody td a:hover, .tableSelect tbody td a:hover {
+		background: transparent;
+		text-decoration: underline;
+	}
+	.table tbody th a, .tableSelect tbody th a {
+		background: transparent;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	.table tbody th, .table tbody td, .tableSelect tbody th, .tableSelect tbody td {
+		text-align: left;
+	}
+	.table tfoot td, .tableSelect tfoot td {
+		border: 1px solid #996;
+	}
+	.table tbody tr:hover, .table tr.over, .contribTable tr:hover {
+		background: #ffffd9 !important; /* important needed for Tapestry, as is .table tr:hover */
+	}

@@ -11,12 +11,12 @@
     http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
   # Checkout the !DataSourceManager project from !GoogleCode:
     {{{
-    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager
+    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager/[release]
     }}}
   # Create the JAR file for DataSourceManager
   # Checkout the CollectionInterface project from !GoogleCode:
     {{{
-    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ CollectionInterface
+    svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ CollectionInterface/[release]
     }}} 
   # Add !DataSourceManager.jar as library to the CollectionInterface
   # Create the WAR file for CollectionInterface

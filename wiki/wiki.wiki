@@ -10,7 +10,7 @@ Reference datasets from public repositories can be mirrored locally using the do
 Linking downloaded reference data with Galaxy
 
  * *Collection Manager*
-This is a web-interface that allows users to manage the data and workflow records that are published to the RDA website.
+This is a web-interface that allows users to manage the data and workflow records that are published to the RDA website. See CollectionManager on how to host a local instance.
 
  * *Data Galaxy Servlet*
 Linking datasets downloaded with [http://biomaj.genouest.org/ BioMAJ] with the Collection Manager. See DataGalaxyServlet for more information about how to set up the servlet.

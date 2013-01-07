@@ -13,13 +13,13 @@
     {{{
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager/[release]
     }}}
-  # Create the JAR file for DataSourceManager
+  # Create the JAR file for !DataSourceManager
   # Checkout the CollectionInterface project from !GoogleCode:
     {{{
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ CollectionInterface/[release]
     }}} 
-  # Add !DataSourceManager.jar as library to the CollectionInterface
-  # Create the WAR file for CollectionInterface
+  # Add !DataSourceManager.jar as library to the !CollectionInterface
+  # Create the WAR file for !CollectionInterface
   # Deploy the WAR file to the Servlet Controller
 == Configuring CollectionManager == 
   # Go to: <tomcat dir>/webapps/!CollectionInterface/WEB-INF/classes/ and edit the 3 files:

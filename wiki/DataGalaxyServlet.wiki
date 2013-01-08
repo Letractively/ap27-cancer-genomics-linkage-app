@@ -14,7 +14,7 @@
   # Create the WAR file for !DataGalaxyServlet 
   # Deploy the WAR file to the Servlet Controller <br /><p>If you have not set up the MySQL database required for the CollectionManager: </p>
   # Create a MySQL database using the schema provided:
-    http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/
+    [http://code.google.com/p/ap27-cancer-genomics-linkage-app/downloads/detail?name=CollectionManager_Database_Schema_beta1.0.sql&can=2&q= CollectionManager_Database_Schema_beta1.0.sql]
 == Configuring DataGalaxyServlet ==
   # Go to: <tomcat dir>/webapps/!DataGalaxyServlet/WEB-INF/classes/ and edit the 2 files:
     * hibernate.cfg.xml

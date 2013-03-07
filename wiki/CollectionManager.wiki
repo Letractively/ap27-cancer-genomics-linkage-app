@@ -27,7 +27,7 @@
     {{{
     svn checkout http://ap27-cancer-genomics-linkage-app.googlecode.com/svn/projects/ DataSourceManager/[release]
     }}}
-  # Add the Hibernate JAR files in the Build Path of DataSourceManager The Jars are available in the Download section
+  # Add the Hibernate JAR files in the Build Path of !DataSourceManager (The Jars are available in the Download section).
   # Create the JAR file for !DataSourceManager
   # Checkout the !CollectionInterface project from !GoogleCode:
     {{{

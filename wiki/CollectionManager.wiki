@@ -38,11 +38,11 @@
   # Create the WAR file for !CollectionInterface
   # Deploy the WAR file to the Servlet Controller
 
-== Setting up Bioflow ==
+== Setting up Galaxy==
 In order to publish workflow from Galaxy to RDA, a button has been added into Galaxy.
 
-A new fork of the galaxy central repository has been implemented and users can download a customised version of RDA. 
-this repository can be found under https://bitbucket.org/qfab/galaxy-dist
+A new fork of the galaxy central repository has been implemented and users can download a customised version of the software with the extra feature. 
+This repository can be found under https://bitbucket.org/qfab/galaxy-dist
 
 == Configuring CollectionManager == 
   # Go to: <tomcat dir>/webapps/!CollectionInterface/WEB-INF/classes/ and edit the 3 files:

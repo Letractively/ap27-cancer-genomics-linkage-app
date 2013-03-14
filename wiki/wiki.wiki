@@ -14,3 +14,9 @@ This is a web-interface that allows users to manage the data and workflow record
 
  * *Data Galaxy Servlet*
 Linking datasets downloaded with [http://biomaj.genouest.org/ BioMAJ] with the Collection Manager. See DataGalaxyServlet for more information about how to set up the servlet.
+
+ * *Galaxy Instance*
+In order to publish workflow from Galaxy to RDA, a button has been added into Galaxy.
+
+A new fork of the galaxy central repository has been implemented and users can download a customised version of the software with the extra feature. 
+This repository can be found under https://bitbucket.org/qfab/galaxy-dist
